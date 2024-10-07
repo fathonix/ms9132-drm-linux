@@ -23,6 +23,7 @@
 #include <linux/timer.h>
 #include <linux/mutex.h>
 #include <linux/device.h>
+#include <linux/platform_device.h>
 #if KERNEL_VERSION(5, 5, 0) <= LINUX_VERSION_CODE || defined(EL8)
 #include <drm/drm_drv.h>
 #include <drm/drm_fourcc.h>
@@ -31,7 +32,8 @@
 #else
 #include <drm/drmP.h>
 #endif
-#if KERNEL_VERSION(5, 15, 0) <= LINUX_VERSION_CODE
+#if KERNEL_VERSION(6, 3, 0) <= LINUX_VERSION_CODE
+#elif KERNEL_VERSION(5, 15, 0) <= LINUX_VERSION_CODE
 #include <drm/drm_legacy.h>
 #else
 #include <drm/drm_irq.h>
