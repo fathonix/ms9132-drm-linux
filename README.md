@@ -8,4 +8,6 @@ files are extracted from [MS91xx_Linux_Drm_SourceCode_V3.0.1.3.zip](http://www.m
 ## Notes
 
 Although this is listed as MS91xx driver on their website, the code seems to
-only check for MS9132 USB id, though it does check for MS912x chips.
+only check for MS9132 USB id, though it does check for MS912x chips. Try
+[the unofficial driver](https://github.com/rhgndf/ms912x) reverse-engineered
+from Windows if you are looking for MS912x driver or this does not work.
