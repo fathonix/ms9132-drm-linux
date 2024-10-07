@@ -1,0 +1,14 @@
+[Unit]
+Description=Usb Display Monitor
+After=display-manager.service
+Conflicts=getty@tty7.service
+
+[Service]
+ExecStart=/bin/bash /usr/local/bin/usbdisp_monitor.sh
+Environment=HOME=/root
+WorkingDirectory=-/root
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=graphical.target
